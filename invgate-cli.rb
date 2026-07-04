@@ -11,7 +11,7 @@ class InvgateCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/wdelcant/invgate-cli/releases/download/v0.1.3/invgate-cli_0.1.3_macOS_amd64.tar.gz"
-      sha256 "f5d05c18690aeea5c3f70ab4c64b683c92ba311379596fdad54ad76c74ddb827"
+      sha256 "56ac94ddc6395e8ab74c1239078f53f0b58cf5cf9a25ac244a826cbf526f0b1b"
 
       define_method(:install) do
         bin.install "invgate-cli"
@@ -19,7 +19,7 @@ class InvgateCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/wdelcant/invgate-cli/releases/download/v0.1.3/invgate-cli_0.1.3_macOS_arm64.tar.gz"
-      sha256 "d57e473be42048700e2522407fe514ef3de3e3ad87c9309e32197b0b7aa92e28"
+      sha256 "1bb1b63fe8ee874ba302288cd20ec9221258eab8dbb097b8f092eeca9a5997ad"
 
       define_method(:install) do
         bin.install "invgate-cli"
@@ -30,14 +30,14 @@ class InvgateCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/wdelcant/invgate-cli/releases/download/v0.1.3/invgate-cli_0.1.3_Linux_amd64.tar.gz"
-      sha256 "9bcd6925574ccb7de4ee08d57310156c7f5912817e82f30efc22b04f071c0e30"
+      sha256 "083f7c3e0df345bfe7f5b7b00b175bd1e8c5f16425840d78e918a3e2a669c0a8"
       define_method(:install) do
         bin.install "invgate-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/wdelcant/invgate-cli/releases/download/v0.1.3/invgate-cli_0.1.3_Linux_arm64.tar.gz"
-      sha256 "6381626df5ba61362b3a8bf0fcad54b7096ac174e52d0ce8de9dca6542be3085"
+      sha256 "064792d145226f18b0532f353b7673615ece3475f5e101ab9b78f480358ce2cf"
       define_method(:install) do
         bin.install "invgate-cli"
       end
