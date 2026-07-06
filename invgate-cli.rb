@@ -5,21 +5,21 @@
 class InvgateCli < Formula
   desc "Runtime OpenAPI/Swagger CLI — works with any Swagger/OpenAPI spec"
   homepage "https://github.com/wdelcant/invgate-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.3.0/invgate-cli_0.3.0_macOS_amd64.tar.gz"
-      sha256 "24169b27531bd92f4290f6f9973b9b0a64e2b1f678f3eb05c901ff28ce2543f8"
+      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.4.0/invgate-cli_0.4.0_macOS_amd64.tar.gz"
+      sha256 "777b38466a3d38e45fbd906ad9ef0c3d0e85dba7b239ff4b759cab9b66e463d8"
 
       define_method(:install) do
         bin.install "invgate-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.3.0/invgate-cli_0.3.0_macOS_arm64.tar.gz"
-      sha256 "288c9e1f5ff9d5faaf2e3b99d4ba21d5b45a1f11a3573e2a2c2133b69a99085d"
+      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.4.0/invgate-cli_0.4.0_macOS_arm64.tar.gz"
+      sha256 "009d221ce5a478c0481e3dfd2ca8dde3d8c498dc6337856c49899f71db6d59e8"
 
       define_method(:install) do
         bin.install "invgate-cli"
@@ -29,15 +29,15 @@ class InvgateCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.3.0/invgate-cli_0.3.0_Linux_amd64.tar.gz"
-      sha256 "f7caddb551c4aee04030322892ba5b6e1f106613ebca54fd42d732bce9e8b05e"
+      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.4.0/invgate-cli_0.4.0_Linux_amd64.tar.gz"
+      sha256 "e94499cc836eafcfb9aadbd21dcb45a6a0586a6be9fb2e15858b68ac7d51d61c"
       define_method(:install) do
         bin.install "invgate-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.3.0/invgate-cli_0.3.0_Linux_arm64.tar.gz"
-      sha256 "6c6931f0b4354804bac54ca554302a111c44d6257fff16e805e0a7d603281510"
+      url "https://github.com/wdelcant/invgate-cli/releases/download/v0.4.0/invgate-cli_0.4.0_Linux_arm64.tar.gz"
+      sha256 "4f394f04326310ddba78e7d3f162f0e368a39091345b415f9deb682b6411a510"
       define_method(:install) do
         bin.install "invgate-cli"
       end
